@@ -1,0 +1,72 @@
+.hero {
+    margin-top: -2rem;
+
+    padding-bottom: 7.5rem;
+
+    @include respond-to(medium) {
+        padding-bottom: 9.5rem;
+    }
+
+    @include respond-to(large) {
+        padding-bottom: 0;
+    }
+
+    &__header {
+        margin-top: -2.8rem;
+        max-width: 57rem;
+
+        @include respond-to(medium) {
+            margin-top: -2rem;
+        }
+
+        @include respond-to(large) {
+            margin-top: -5rem;
+        }
+    }
+
+    &__form {
+        margin-top: 2.5rem;
+
+        @include respond-to(large) {
+            margin-top: 3.3rem;
+        }
+
+        @include respond-to(large) {
+            margin-top: 4.2rem;
+        }
+    }
+
+    &__contact {
+        margin-top: 0.8rem;
+
+        @include respond-to(large) {
+            padding-left: 2.7rem;
+
+        }
+    }
+
+    &__img-wrapper {
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        padding-left: 2.8rem;
+
+
+        @include respond-to(large) {
+            justify-self: end;
+            margin-right: -1rem;
+        }
+    }
+
+    &__img {
+        width: 68%;
+
+        @include respond-to(small) {
+            width: 62%;
+        }
+
+        @include respond-to(large) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-72 {
+    height: 7.2rem;
+}
+
+.w-72 {
+    width: 7.2rem;
+}
+
+.w-310 {
+    max-width: 31rem;
+}
+
+.md\:w-457 {
+    @include respond-to(medium) {
+        max-width: 45.7rem;
+    }
+}

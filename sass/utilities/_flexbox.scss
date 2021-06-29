@@ -1,0 +1,46 @@
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.md\:flex-row {
+    @include respond-to(medium) {
+        flex-direction: row;
+    }
+}
+
+.lg\:flex-col {
+    @include respond-to(large) {
+        flex-direction: column;
+    }
+}
+
+.lg\:flex-row {
+    @include respond-to(large) {
+        flex-direction: row;
+    }
+}
+
+
+.huge\:order-1 {
+    @include respond-to(huge) {
+        order: 1;
+    }
+}
+
+.huge\:order-2 {
+    @include respond-to(huge) {
+        order: 2;
+    }
+}
+
+.flex-grow {
+    flex-grow: 1;
+}

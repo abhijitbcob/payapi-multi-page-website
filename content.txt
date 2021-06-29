@@ -1,0 +1,179 @@
+------------------------ HOME PAGE ------------------------
+
+Pricing
+About
+Contact
+Schedule a Demo
+
+Start building with our APIs for absolutely free.
+Enter email address
+Schedule a Demo
+Have any questions? Contact Us
+
+Who we work with
+Today, millions of people around the world have successfully connected
+their accounts to apps they love using our API. We provide developers
+with the tools they need to create easy and accessible experiences
+for their users.
+About Us
+
+Easy to implement
+Our API comes with just a few lines of code. You’ll be up and running in
+no time. We built our documentation page to integrate payments functionality
+with ease.
+
+Simple UI & UX
+Our pre-built form is easy to integrate in your app or website’s checkout
+flow and designed to optimize conversion.
+
+Personal Finances
+Consolidate financial data from multiple sources and categorize transactions up to
+2 years of history. Analyze reports to reconcile activities in your account.
+
+Banking & Coverage
+With our platform, you can speed up account onboarding and support ongoing payments
+for checking, savings, credit card, and brokerage accounts.
+
+Consumer Payments
+It’s easier to set up secure bank payments with us through a flow designed with the
+user experience in mind. Customers could instantly authenticate their account.
+
+Ready to start?
+Enter email address
+Schedule a Demo
+
+Pricing
+About
+Contact
+
+------------------------ PRICING PAGE ------------------------
+
+Pricing
+    About
+    Contact
+    Schedule a Demo
+
+    Pricing
+
+    Free Plan
+    Build and test using our core set of products with up to 100 API requests
+    $0.00
+    
+    Transactions
+    Auth
+    Identity
+    Investments
+    Assets
+    Liabilities
+    Income
+    Request Access
+
+    Basic Plan
+    Launch your project with unlimited requests and no contractual minimums
+    $249.00
+    
+    Transactions
+    Auth
+    Identity
+    Investments
+    Assets
+    Liabilities
+    Income
+    Request Access
+
+    Premium Plan
+    Get tailored solutions, volume pricing, and dedicated support for your team
+    $499.00
+    
+    Transactions
+    Auth
+    Identity
+    Investments
+    Assets
+    Liabilities
+    Income
+    Request Access
+
+    Ready to start? 
+    Enter email address 
+    Schedule a Demo
+
+    Pricing
+    About
+    Contact
+
+------------------------ ABOUT PAGE ------------------------
+
+Pricing
+    About
+    Contact
+    Schedule a Demo
+
+    We empower innovators by delivering access to the financial system
+
+    Our Vision
+
+    Our main goal is to build beautiful consumer experiences along with developer-friendly 
+    infrastructure. The result is an intelligent tool that gives everyone the ability to create 
+    amazing products that solve big problems. We are deeply focused on democratizing financial 
+    services through technology.
+
+    Our Business
+
+    At the core of our platform is the technical infrastructure APIs that connect consumers. 
+    Our innovative product provides key insights for businesses and individuals, as well as 
+    robust reporting for traditional financial institutions and developers.
+
+    Team Members 
+    300+
+
+    Offices in the US 
+    3
+
+    Transactions analyzed 
+    10M+
+
+    The Culture
+
+    We strongly believe there's always an opportunity to learn from each other outside of 
+    day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
+    We always value cross-team collaboration and diversity of thought, no matter the job title.
+
+    The People
+    
+    We're all passionate about building a more efficient and inclusive financial infrastructure 
+    together. At PayAPI, we have diverse backgrounds and skills.
+
+    Ready to start? 
+    Enter email address 
+    Schedule a Demo
+
+    Pricing
+    About
+    Contact
+
+------------------------ ABOUT PAGE ------------------------
+    Pricing
+    About
+    Contact
+    Schedule a Demo
+
+    Submit a help request and we’ll get in touch shortly.
+    
+    Name
+    Email Address
+    Company Name
+    Title
+    Message
+    Stay up-to-date with company announcements and updates to our API
+    Submit
+
+    Join the thousands of innovators already building with us
+
+    Ready to start? 
+    Enter email address 
+    Schedule a Demo
+
+    Pricing
+    About
+    Contact

@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+    display: inline-block;
+    padding-inline: 2.55rem;
+    padding-block: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: var(--font-bold);
+    font-family: var(--ff-secondary);
+    letter-spacing: -0.12px;
+    line-height: 1.8rem;
+    border-radius: 5rem;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--dark-pink);
+    color: var(--link-water-white);
+    border: none;
+    cursor: pointer;
+
+    &:focus-visible {
+        outline: 3px dotted hsl(337, 59%, 60%);
+    }
+
+    &:hover,
+    &:active {
+        background-color: var(--charm-pink);
+    }
+
+    &--disabled {
+        opacity: 0.5;
+    }
+
+}
+
+.btn-secondary {
+
+    &--light {
+        color: var(--link-water-white);
+        background-color: transparent;
+        border: 1px solid var(--link-water-white);
+
+        &:hover,
+        &:active {
+            background-color: var(--link-water-white);
+            color: var(--mirage-blue);
+        }
+    }
+
+    &--dark {
+        color: var(--mirage-blue);
+        background-color: var(--link-water-white);
+        border: 1px solid var(--mirage-blue);
+
+        &:hover,
+        &:active {
+            background-color: var(--san-juan-blue);
+            color: var(--link-water-white);
+        }
+
+        &:focus-visible {
+            outline: 3px dotted hsl(208, 27%, 60%);
+        }
+
+    }
+
+    &--disabled {
+        opacity: 0.5;
+    }
+
+}

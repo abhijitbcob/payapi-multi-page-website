@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+    padding-block: 4rem;
+
+    &__nav-list {
+        margin-left: 4rem;
+        gap: 4rem;
+    }
+}
+
+
+
+
+.blue-link:link,
+.blue-link:visited {
+    color: var(--san-juan-blue);
+}
+
+
+// Mobile hamburger menu
+#btn-menu {
+    cursor: pointer;
+
+    &:focus,
+    &:active {
+        outline: 3px dotted hsl(207, 33%, 60%);
+        outline-offset: 6px;
+    }
+}

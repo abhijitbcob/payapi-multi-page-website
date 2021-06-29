@@ -1,0 +1,34 @@
+.schedule-form {
+    display: inline-grid;
+    gap: 1.6rem;
+
+    max-width: 44.5rem;
+    width: 100%;
+
+    &__input {
+        padding: 1.5rem 2.7rem;
+        border: none;
+        border-radius: 5rem;
+        color: var(--san-juan-blue);
+        font-family: var(--ff-secondary);
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        outline: none;
+
+        &::placeholder {
+            color: inherit;
+            opacity: 0.5;
+        }
+
+        // positioning in grid
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+
+    &__btn {
+        @include respond-to(medium) {
+            grid-row: 1/2;
+            grid-column: 1/-1;
+            justify-self: end;
+        }
+    }
+}

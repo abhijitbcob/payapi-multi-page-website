@@ -1,0 +1,69 @@
+/* Reusable grid utilities  */
+.grid {
+    display: grid;
+}
+
+.grid-col-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-col-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+.md\:grid-col-2 {
+    @include respond-to(medium) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.md\:grid-col-3 {
+    @include respond-to(medium) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.lg\:grid-col-2 {
+    @include respond-to(large) {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); // used
+    }
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+
+
+.lg\:justify-items-stretch {
+    @include respond-to(large) {
+        justify-items: stretch;
+
+    }
+}
+
+.md\:order-1 {
+    @include respond-to(medium) {
+        order: 1;
+    }
+}
+
+.md\:order-2 {
+    @include respond-to(medium) {
+        order: 2;
+    }
+}
+
+
+.lg\:order-1 {
+    @include respond-to(large) {
+        order: 1;
+    }
+}
+
+.lg\:order-2 {
+    @include respond-to(large) {
+        order: 2;
+    }
+}

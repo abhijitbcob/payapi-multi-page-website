@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.white-link:link,
+.white-link:visited {
+    color: var(--link-water-white);
+}
+
+
+.footer {
+    padding-block: 3rem;
+
+    &__nav-list {
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+
+        @include respond-to(medium) {
+            margin-left: 4rem;
+            margin-top: 0;
+            gap: 4rem;
+        }
+    }
+
+    &__socials {
+        gap: 2.4rem;
+        margin-top: 3.5rem;
+
+        @include respond-to(medium) {
+            margin-top: 0;
+        }
+
+        a:hover svg path,
+        a:focus-visible svg path {
+            fill: var(--charm-pink);
+            transition: fill 200ms ease-in-out;
+        }
+    }
+}

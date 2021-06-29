@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// 2. Configuration and helpers
+@import 'abstracts/mixins';
+
+// 1. Base stuff
+@import 'base/resets';
+@import 'base/root';
+@import 'base/typography';
+@import 'base/animation';
+
+
+// 3. Reusable utility classes
+@import 'utilities/flexbox';
+@import 'utilities/grid';
+@import 'utilities/spacing';
+@import 'utilities/sizing';
+@import 'utilities/alignment';
+@import 'utilities/backgrounds';
+@import 'utilities/effects';
+@import 'utilities/layout';
+
+
+// 4. Layout-related sections
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/footer';
+
+// 5. Components
+@import 'components/button';
+@import 'components/schedule-form';
+@import 'components/sidenav';
+
+
+// 6. Page-specific styles
+@import 'pages/home';
+@import 'pages/pricing';
+@import 'pages/about';
+@import 'pages/contact';

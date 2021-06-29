@@ -1,0 +1,21 @@
+:root {
+    // Primary colors
+    --dark-pink: hsl(337, 48%, 49%);
+    --link-water-white: hsl(220, 60%, 99%); // text color - for paragraph
+
+    // Secondary colors
+    --san-juan-blue: hsl(207, 33%, 32%); // text color
+    --mirage-blue: hsl(207, 27%, 15%); // text color - for headings
+    --light-san-juan-blue: hsl(207, 16%, 50%); // text color - for paragraph
+    --charm-pink: hsl(337, 60%, 64%);
+
+
+    // Font family
+    --ff-primary: 'DM Serif Display', serif;
+    --ff-secondary: 'Public Sans', sans-serif;
+
+    // Font sizes
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+}

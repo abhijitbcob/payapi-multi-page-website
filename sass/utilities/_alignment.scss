@@ -1,0 +1,52 @@
+.mx-auto {
+    margin-inline: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.md\:text-left {
+    @include respond-to(medium) {
+        text-align: left;
+    }
+}
+
+.md\:text-right {
+    @include respond-to(medium) {
+        text-align: right;
+    }
+}
+
+.lg\:text-left {
+    @include respond-to(large) {
+        text-align: left;
+    }
+}
+
+.huge\:text-left {
+    @include respond-to(huge) {
+        text-align: left;
+    }
+}
+
+// Flex and Grid alignment
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.self-stretch {
+    align-self: stretch;
+}
+
+.items-baseline {
+    align-items: baseline;
+}
