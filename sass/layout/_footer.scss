@@ -9,10 +9,16 @@
 
 
 .footer {
-    padding-block: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+
+    @include respond-to(medium) {
+        padding-block: 2.7rem;
+    }
 
     &__nav-list {
-        gap: 1.5rem;
+        gap: 1.8rem;
         margin-top: 2.5rem;
 
         @include respond-to(medium) {
@@ -34,6 +40,21 @@
         a:focus-visible svg path {
             fill: var(--charm-pink);
             transition: fill 200ms ease-in-out;
+        }
+    }
+
+
+    &::before {
+        width: 78rem;
+        height: 78rem;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -604px;
+
+
+        @include respond-to(medium) {
+            top: -136px;
+            left: 100%;
         }
     }
 }

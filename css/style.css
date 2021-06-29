@@ -695,10 +695,16 @@ li {
 }
 
 .footer {
-  padding-block: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-block: 2.7rem;
+  }
 }
 .footer__nav-list {
-  gap: 1.5rem;
+  gap: 1.8rem;
   margin-top: 2.5rem;
 }
 @media (min-width: 768px) {
@@ -721,6 +727,19 @@ li {
 .footer__socials a:focus-visible svg path {
   fill: var(--charm-pink);
   transition: fill 200ms ease-in-out;
+}
+.footer::before {
+  width: 78rem;
+  height: 78rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -604px;
+}
+@media (min-width: 768px) {
+  .footer::before {
+    top: -136px;
+    left: 100%;
+  }
 }
 
 .btn {
