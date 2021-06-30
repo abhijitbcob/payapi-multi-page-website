@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 .bg-pattern-circle {
     position: relative;
-    overflow: hidden;
 
     &::before {
         content: '';
@@ -15,7 +14,7 @@
     }
 }
 
-.home-hero {
+.home-header {
 
     &::before {
         top: -143vw;
@@ -32,6 +31,7 @@
 
         @include respond-to(large) {
             top: -23.3%;
+            top: -23.3vh;
             left: 55.5%;
             width: 78rem;
             height: 78rem;
@@ -43,8 +43,9 @@
 
 
 .we-work-with {
-    &::before {
 
+
+    &::before {
         top: -160.3vw;
         left: -53.8%;
         width: 208vw;

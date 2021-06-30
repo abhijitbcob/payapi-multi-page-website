@@ -1,3 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the pricing page. 
 // -----------------------------------------------------------------------------
+
+.pricing-header {
+    &::before {
+        height: 78rem;
+        width: 78rem;
+    }
+}
+
+.pricing {
+    height: 600px;
+}

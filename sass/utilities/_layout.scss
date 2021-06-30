@@ -11,6 +11,20 @@
     }
 }
 
+// Overflow
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
 /* Object Fit */
 .object-contain {
     object-fit: contain;
@@ -41,4 +55,8 @@
 
 .z-10 {
     z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
 }
