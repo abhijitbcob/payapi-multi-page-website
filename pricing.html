@@ -4,57 +4,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <title>Frontend Mentor | PayAPI Website Challenge</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header pricing-header bg-primary bg-pattern-circle">
-    <div class="container">
-      <div class="flex items-center justify-between">
-        <a href="index.html">
-          <img src="images/shared/desktop/logo.svg" alt="logo">
-        </a>
-        <nav class="flex-grow hide-for-mobile">
-          <ul class="header__nav-list flex items-center">
-            <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
-                href="pricing.html">Pricing</a>
-            </li>
-            <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
-                href="pricing.html">About</a>
-            </li>
-            <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
-                href="contact.html">Contact</a>
-            </li>
-            <li class="ml-auto"><a href="#" class="btn btn-primary">Schedule a Demo</a></li>
-          </ul>
+  <section class="bg-pattern-circle bg-pattern-circle--cp bg-primary overflow-x-hidden">
+    <header class="header bg-primary">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <a href="index.html">
+            <img src="images/shared/desktop/logo.svg" alt="logo">
+          </a>
+          <nav class="flex-grow hide-for-mobile">
+            <ul class="header__nav-list flex items-center">
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="pricing.html">Pricing</a>
+              </li>
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="pricing.html">About</a>
+              </li>
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="contact.html">Contact</a>
+              </li>
+              <li class="ml-auto"><a href="#" class="btn btn-primary">Schedule a Demo</a></li>
+            </ul>
+          </nav>
+          <button class="hide-for-desktop" id="btn-menu">
+            <img src="images/shared/mobile/menu.svg" alt="Mobile menu">
+          </button>
+        </div>
+      </div>
+
+
+      <div class="sidenav" id="mysidenav">
+        <nav class="flex flex-col gap-24">
+          <button id="btn-close"><img src="images/shared/mobile/close.svg" alt="close icon"></button>
+          <div class="flex flex-col items-center gap-3 sidenav__list">
+            <a class="opacity-70 focus:underline" href="pricing.html">Pricing</a>
+            <a class="opacity-70 focus:underline" href="about.html">About</a>
+            <a class="opacity-70 focus:underline" href="contact.html">Contact</a>
+            <a class="btn btn-primary self-stretch" href="#">Schedule a Demo</a>
+          </div>
         </nav>
-        <button class="hide-for-desktop" id="btn-menu">
-          <img src="images/shared/mobile/menu.svg" alt="Mobile menu">
-        </button>
+      </div>
+    </header>
+
+    <div class="pricing bg-primary">
+      <div class="container">
+        <h1 class="heading-1--small text-center lg:text-left">Pricing</h1>
+        <ul class="comparision-plans md:grid-col-3">
+          <li class="plan-wrapper">
+            <h3 class="heading-3--big">Free Plan</h3>
+            <p class="paragraph">
+              Build and test using our core set of products with up to 100 API requests
+            </p>
+            <span class="plan-price">$0.00</span>
+            <ul class="plan-list">
+              <li>
+                <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none"
+                    fill-rule="evenodd" />
+                </svg>
+                <span>Transactions</span>
+              </li>
+              <li>
+                <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none"
+                    fill-rule="evenodd" />
+                </svg>
+                <span>Auth</span>
+              </li>
+              <li>
+                <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none"
+                    fill-rule="evenodd" />
+                </svg>
+                <span>Identity</span>
+              </li>
+              <li>
+                <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none"
+                    fill-rule="evenodd" />
+                </svg>
+                <span>Investments</span>
+              </li>
+              <li>
+                <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none"
+                    fill-rule="evenodd" />
+                </svg>
+                <span>Assets</span>
+              </li>
+              <li>
+                <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none"
+                    fill-rule="evenodd" />
+                </svg>
+                <span>Liabilities</span>
+              </li>
+              <li>
+                <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.718L4.893 9.56l8.107-8" stroke="#BA4270" stroke-width="2" fill="none"
+                    fill-rule="evenodd" />
+                </svg>
+                <span>Income</span>
+              </li>
+            </ul>
+            <button class="btn btn-secondary--dark">Request Access</button>
+          </li>
+
+        </ul>
       </div>
     </div>
-
-
-    <div class="sidenav" id="mysidenav">
-      <nav class="flex flex-col gap-24">
-        <button id="btn-close"><img src="images/shared/mobile/close.svg" alt="close icon"></button>
-        <div class="flex flex-col items-center gap-3 sidenav__list">
-          <a class="opacity-70 focus:underline" href="pricing.html">Pricing</a>
-          <a class="opacity-70 focus:underline" href="about.html">About</a>
-          <a class="opacity-70 focus:underline" href="contact.html">Contact</a>
-          <a class="btn btn-primary self-stretch" href="#">Schedule a Demo</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <section class="pricing bg-primary">
-
   </section>
+
+
+
 
   <script src="js/script.js"></script>
 </body>

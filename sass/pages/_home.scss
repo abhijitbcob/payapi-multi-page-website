@@ -1,51 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page. 
 // -----------------------------------------------------------------------------
-.bg-pattern-circle {
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-
-        background-image: url('../../images/shared/desktop/bg-pattern-circle.svg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-}
-
-.home-header {
-
-    &::before {
-        top: -143vw;
-        left: -53.8%;
-        width: 208vw;
-        height: 208vw;
-
-        @include respond-to(small) {
-            width: 123.6vw;
-            height: 123.6vw;
-            top: -85vw;
-            left: -11.8vw;
-        }
-
-        @include respond-to(large) {
-            top: -23.3%;
-            top: -23.3vh;
-            left: 55.5%;
-            width: 78rem;
-            height: 78rem;
-        }
-
-    }
-}
-
-
-
 .we-work-with {
-
-
     &::before {
+
         top: -160.3vw;
         left: -53.8%;
         width: 208vw;
@@ -155,8 +113,6 @@
 
     &__articles {
         .bg-pattern-circle {
-            overflow: visible;
-
             &::before {
                 display: none;
                 height: 118.1%;

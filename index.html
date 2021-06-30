@@ -15,74 +15,74 @@
 </head>
 
 <body>
-
-  <header class="header home-header bg-pattern-circle bg-primary">
-    <div class="container">
-      <div class="flex items-center justify-between">
-        <a href="index.html">
-          <img src="images/shared/desktop/logo.svg" alt="logo">
-        </a>
-        <nav class="flex-grow hide-for-mobile">
-          <ul class="header__nav-list flex items-center">
-            <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
-                href="pricing.html">Pricing</a>
-            </li>
-            <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
-                href="pricing.html">About</a>
-            </li>
-            <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
-                href="contact.html">Contact</a>
-            </li>
-            <li class="ml-auto"><a href="#" class="btn btn-primary">Schedule a Demo</a></li>
-          </ul>
-        </nav>
-        <button class="hide-for-desktop" id="btn-menu">
-          <img src="images/shared/mobile/menu.svg" alt="Mobile menu">
-        </button>
+  <section class="bg-pattern-circle bg-pattern-circle--ht bg-primary overflow-x-hidden">
+    <header class="header relative">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <a href="index.html">
+            <img src="images/shared/desktop/logo.svg" alt="logo">
+          </a>
+          <nav class="flex-grow hide-for-mobile">
+            <ul class="header__nav-list flex items-center">
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="pricing.html">Pricing</a>
+              </li>
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="pricing.html">About</a>
+              </li>
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="contact.html">Contact</a>
+              </li>
+              <li class="ml-auto"><a href="#" class="btn btn-primary">Schedule a Demo</a></li>
+            </ul>
+          </nav>
+          <button class="hide-for-desktop" id="btn-menu">
+            <img src="images/shared/mobile/menu.svg" alt="Mobile menu">
+          </button>
+        </div>
       </div>
-    </div>
 
 
-    <div class="sidenav" id="mysidenav">
-      <nav class="flex flex-col gap-24">
-        <button id="btn-close"><img src="images/shared/mobile/close.svg" alt="close icon"></button>
-        <div class="flex flex-col items-center gap-3 sidenav__list">
-          <a class="opacity-70 focus:underline" href="pricing.html">Pricing</a>
-          <a class="opacity-70 focus:underline" href="about.html">About</a>
-          <a class="opacity-70 focus:underline" href="contact.html">Contact</a>
-          <a class="btn btn-primary self-stretch" href="#">Schedule a Demo</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero bg-primary">
-    <div class="container">
-
-      <div class="grid lg:grid-col-2 items-center justify-center">
-        <div class="hero__img-wrapper lg:order-2 relative">
-          <img class="hero__img" src="images/home/desktop/illustration-phone-mockup.svg" alt="phone mockup">
-        </div>
-
-        <header class="hero__header lg:order-1 text-center lg:text-left">
-          <h1 class="heading-1--large">
-            Start building with our APIs for absolutely free.
-          </h1>
-          <form action="#" class="schedule-form hero__form">
-            <input type="email" name="schedule-email" id="email" placeholder="Enter email address"
-              class="schedule-form__input font-bold">
-            <button class="btn btn-primary schedule-form__btn">Schedule a Demo</button>
-          </form>
-          <div class="inline-flex hero__contact">
-            <p>Have any questions?</p> &NonBreakingSpace;
-            <a class="blue-link font-bold focus:underline" href="contact.html">Contact Us</a>
+      <div class="sidenav" id="mysidenav">
+        <nav class="flex flex-col gap-24">
+          <button id="btn-close"><img src="images/shared/mobile/close.svg" alt="close icon"></button>
+          <div class="flex flex-col items-center gap-3 sidenav__list">
+            <a class="opacity-70 focus:underline" href="pricing.html">Pricing</a>
+            <a class="opacity-70 focus:underline" href="about.html">About</a>
+            <a class="opacity-70 focus:underline" href="contact.html">Contact</a>
+            <a class="btn btn-primary self-stretch" href="#">Schedule a Demo</a>
           </div>
-        </header>
+        </nav>
+      </div>
+    </header>
 
+    <div class="hero relative">
+      <div class="container">
+
+        <div class="grid lg:grid-col-2 items-center justify-center">
+          <div class="hero__img-wrapper lg:order-2">
+            <img class="hero__img" src="images/home/desktop/illustration-phone-mockup.svg" alt="phone mockup">
+          </div>
+
+          <header class="hero__header lg:order-1 text-center lg:text-left">
+            <h1 class="heading-1--large">
+              Start building with our APIs for absolutely free.
+            </h1>
+            <form action="#" class="schedule-form hero__form">
+              <input type="email" name="schedule-email" id="email" placeholder="Enter email address"
+                class="schedule-form__input font-bold">
+              <button class="btn btn-primary schedule-form__btn">Schedule a Demo</button>
+            </form>
+            <div class="inline-flex hero__contact">
+              <p>Have any questions?</p> &NonBreakingSpace;
+              <a class="blue-link font-bold focus:underline" href="contact.html">Contact Us</a>
+            </div>
+          </header>
+
+        </div>
       </div>
     </div>
   </section>
-
 
   <section class="we-work-with overflow-hidden bg-pattern-circle bg-secondary">
     <div class="container">

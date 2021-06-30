@@ -1,0 +1,57 @@
+.bg-pattern-circle {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+
+        background-image: url('../../images/shared/desktop/bg-pattern-circle.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    //ht: home-top
+    &--ht {
+        &::before {
+            top: -143vw;
+            left: -53.8%;
+            width: 208vw;
+            height: 208vw;
+
+            @include respond-to(small) {
+                width: 123.6vw;
+                height: 123.6vw;
+                top: -85vw;
+                left: -11.8vw;
+            }
+
+            @include respond-to(large) {
+                top: -23.3%;
+                left: 55.5%;
+                width: 78rem;
+                height: 78rem;
+            }
+
+        }
+    }
+
+    // cp: common-position
+    &--cp {
+        &::before {
+            width: 78rem;
+            height: 78rem;
+            top: -64.4rem;
+            left: 19.73%;
+
+            @include respond-to(medium) {
+                top: -46.4rem;
+                left: 65.75%;
+            }
+
+            @include respond-to(large) {
+                top: -52.7rem;
+                left: 55.55%;
+            }
+        }
+    }
+}
