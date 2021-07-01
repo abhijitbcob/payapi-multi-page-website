@@ -4,14 +4,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <title>Frontend Mentor | PayAPI Website Challenge</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <section class="bg-pattern-circle bg-pattern-circle--cp bg-primary overflow-x-hidden">
+    <header class="header bg-primary">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <a href="index.html">
+            <img src="images/shared/desktop/logo.svg" alt="logo">
+          </a>
+          <nav class="flex-grow hide-for-mobile">
+            <ul class="header__nav-list flex items-center">
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="pricing.html">Pricing</a>
+              </li>
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="about.html">About</a>
+              </li>
+              <li><a class="blue-link font-bold opacity-70 hover:opacity-1 transition-all focus:underline"
+                  href="contact.html">Contact</a>
+              </li>
+              <li class="ml-auto"><a href="#" class="btn btn-primary">Schedule a Demo</a></li>
+            </ul>
+          </nav>
+          <button class="hide-for-desktop" id="btn-menu">
+            <img src="images/shared/mobile/menu.svg" alt="Mobile menu">
+          </button>
+        </div>
+      </div>
 
+
+      <div class="sidenav" id="mysidenav">
+        <nav class="flex flex-col gap-24">
+          <button id="btn-close"><img src="images/shared/mobile/close.svg" alt="close icon"></button>
+          <div class="flex flex-col items-center gap-3 sidenav__list">
+            <a class="opacity-70 focus:underline" href="pricing.html">Pricing</a>
+            <a class="opacity-70 focus:underline" href="about.html">About</a>
+            <a class="opacity-70 focus:underline" href="contact.html">Contact</a>
+            <a class="btn btn-primary self-stretch" href="#">Schedule a Demo</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="about-custom-container">
+        <div class="flex lg:justify-start justify-center about-heading-1">
+          <h1 class="heading-1--small common-heading-width lg:text-left text-center">
+            We empower innovators by delivering access to the financial system
+          </h1>
+        </div>
+
+        <article class="about-article md:text-left text-center">
+          <h3 class="heading-3--big ">Our Vision</h3>
+          <p class="paragraph text-light-blue">
+            Our main goal is to build beautiful consumer experiences along with developer-friendly
+            infrastructure. The result is an intelligent tool that gives everyone the ability to create
+            amazing products that solve big problems. We are deeply focused on democratizing financial
+            services through technology.
+          </p>
+        </article>
+
+        <article class="about-article md:text-left text-center">
+          <h3 class="heading-3--big">Our Business</h3>
+          <p class="paragraph text-light-blue">
+            At the core of our platform is the technical infrastructure APIs that connect consumers.
+            Our innovative product provides key insights for businesses and individuals, as well as
+            robust reporting for traditional financial institutions and developers.
+          </p>
+        </article>
+
+      </div>
+    </div>
+
+    <picture class="team-members-picture">
+      <source media="(min-width: 992px)" srcset="images/about/desktop/image-team-members.jpg">
+      <source media="(min-width: 768px)" srcset="images/about/tablet/image-team-members.jpg">
+      <img class="team-members-img" src="images/about/mobile/image-team-members.jpg" alt="team members image">
+    </picture>
+
+    <div class="container">
+      <div class="grid md:grid-col-3 about-stats">
+        <div class="about-stats__item">
+          <span class="fs-16 opacity-70">Team Members</span>
+          <span class="about-stats__count text-dark-pink">300+</span>
+        </div>
+        <div class="about-stats__item">
+          <span class="fs-16 opacity-70">Offices in the US</span>
+          <span class="about-stats__count text-dark-pink">3</span>
+        </div>
+        <div class="about-stats__item">
+          <span class="fs-16 opacity-70">Transactions analyzed</span>
+          <span class="about-stats__count text-dark-pink">10M+</span>
+        </div>
+      </div>
+
+      <div class="about-custom-container">
+        <article class="about-article md:text-left text-center">
+          <h3 class="heading-3--big ">The Culture</h3>
+          <p class="paragraph text-light-blue">
+            We strongly believe there's always an opportunity to learn from each other outside of
+            day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups.
+            We always value cross-team collaboration and diversity of thought, no matter the job title.
+          </p>
+        </article>
+
+        <article class="about-article md:text-left text-center">
+          <h3 class="heading-3--big">The People</h3>
+          <p class="paragraph text-light-blue">
+            We're all passionate about building a more efficient and inclusive financial infrastructure
+            together. At PayAPI, we have diverse backgrounds and skills.
+          </p>
+        </article>
+
+
+      </div>
+
+      <div>
+        <div class="ready-to-start">
+          <h2 class="heading-2 text-center">
+            Ready to start?
+          </h2>
+          <form action="#" class="schedule-form">
+            <input type="email" name="schedule-email" id="email" placeholder="Enter email address"
+              class="schedule-form__input font-bold">
+            <button class="btn btn-primary schedule-form__btn">Schedule a Demo</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

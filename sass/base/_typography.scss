@@ -16,12 +16,20 @@
     color: var(--link-water-white);
 }
 
+.text-blue {
+    color: var(--san-juan-blue);
+}
+
 .text-mirage-blue {
     color: var(--mirage-blue);
 }
 
 .text-light-blue {
     color: var(--light-san-juan-blue);
+}
+
+.text-dark-pink {
+    color: var(--dark-pink);
 }
 
 /*
@@ -47,9 +55,11 @@
     font-size: 1.5rem;
 }
 
-.fs-18 {
-    font-size: 1.8rem;
+.fs-16 {
+    font-size: 1.5rem;
 }
+
+
 
 .heading-1--large {
     font-family: var(--ff-primary);
@@ -114,6 +124,7 @@
 
 .heading-3--big {
     font-weight: var(--font-regular);
+    font-family: var(--ff-primary);
     font-size: 2.4rem;
     letter-spacing: -0.18px;
     line-height: 3.2rem;

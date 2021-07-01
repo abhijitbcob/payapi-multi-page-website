@@ -50,3 +50,9 @@
 .items-baseline {
     align-items: baseline;
 }
+
+.lg\:justify-start {
+    @include respond-to(large) {
+        justify-content: flex-start;
+    }
+}

@@ -1,3 +1,109 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the about page. 
 // -----------------------------------------------------------------------------
+
+.about-custom-container {
+    max-width: 92rem;
+    margin-inline: auto;
+}
+
+.common-heading-width {
+
+    @include respond-to(large) {
+        max-width: 66rem;
+    }
+}
+
+.about-article {
+    display: grid;
+    justify-items: center;
+    gap: 1.6rem;
+
+    @include respond-to(medium) {
+        grid-template-columns: max-content minmax(0, 45.6rem);
+        justify-content: space-between;
+
+    }
+
+    @include respond-to(large) {
+        grid-template-columns: max-content minmax(0, 63.5rem);
+
+    }
+
+    &+.about-article {
+        margin-top: 4.8rem;
+
+        @include respond-to(medium) {
+            margin-top: 6.4rem;
+        }
+
+        @include respond-to(large) {
+            margin-top: 5.6rem;
+        }
+    }
+}
+
+
+
+.about-heading-1 {
+
+    margin-top: 3.2rem;
+    margin-bottom: 5.4rem;
+
+
+    @include respond-to(large) {
+        margin-top: 3.7rem;
+        margin-bottom: 5.1rem;
+    }
+}
+
+.team-members-img {
+    width: 100%;
+
+    margin-top: 7.6rem;
+
+    @include respond-to(medium) {
+        margin-top: 9.2;
+    }
+
+    @include respond-to(large) {
+        margin-top: 10rem;
+    }
+}
+
+.about-stats {
+    border-top: 1px solid hsl(207, 33%, 32%, 25%);
+    border-bottom: 1px solid hsl(207, 33%, 32%, 25%);
+    margin-block: 4.8rem;
+
+    @include respond-to(medium) {
+        margin-block: 6.4rem;
+        gap: 1rem;
+        border: none;
+    }
+
+    @include respond-to(large) {
+        margin-block: 7.2rem;
+        gap: 3rem;
+    }
+
+    &__item {
+        display: grid;
+        justify-items: center;
+        padding-block: 1.6rem;
+
+        @include respond-to(medium) {
+            border-top: 1px solid hsl(207, 33%, 32%, 25%);
+            border-bottom: 1px solid hsl(207, 33%, 32%, 25%);
+            justify-items: start;
+        }
+    }
+
+    &__count {
+        font-family: var(--ff-primary);
+        font-weight: var(--font-regular);
+        font-size: 5.6rem;
+        line-height: 7.2rem;
+        letter-spacing: -0.43px;
+    }
+}

@@ -6,17 +6,6 @@
     background-color: var(--mirage-blue);
 }
 
-
-.opacity-25 {
-    opacity: 0.25;
-}
-
-.opacity-75 {
-    opacity: 0.75;
-}
-
-
-
 .md\:bg-transparent {
     @include respond-to(medium) {
         background-color: transparent;
