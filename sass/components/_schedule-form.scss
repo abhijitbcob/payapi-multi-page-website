@@ -1,5 +1,6 @@
 .schedule-form {
     display: inline-grid;
+    align-items: center;
     gap: 1.6rem;
 
     max-width: 44.5rem;
@@ -30,5 +31,23 @@
             grid-column: 1/-1;
             justify-self: end;
         }
+    }
+}
+
+.ready-to-start {
+    display: grid;
+    margin-top: 5.5rem;
+    gap: 1.5rem;
+    min-height: 6.5rem;
+
+    @include respond-to(medium) {
+        margin-top: 9rem;
+        justify-items: center;
+    }
+
+    @include respond-to(large) {
+        grid-template-columns: max-content 44.5rem;
+        justify-content: space-between;
+
     }
 }

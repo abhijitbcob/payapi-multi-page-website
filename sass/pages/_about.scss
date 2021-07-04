@@ -46,13 +46,10 @@
 
 
 .about-heading-1 {
-
-    margin-top: 3.2rem;
     margin-bottom: 5.4rem;
 
-
     @include respond-to(large) {
-        margin-top: 3.7rem;
+
         margin-bottom: 5.1rem;
     }
 }

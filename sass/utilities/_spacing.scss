@@ -21,3 +21,12 @@
 
 
 /* RESUABLE PADDING */
+.common-container-padding {
+    padding-top: 0.8rem;
+    padding-bottom: 8rem;
+
+    @include respond-to(large) {
+        padding-top: 3.7rem;
+        padding-bottom: 9.6rem;
+    }
+}

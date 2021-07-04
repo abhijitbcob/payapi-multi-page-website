@@ -152,7 +152,7 @@ Contact
     About
     Contact
 
------------------------- ABOUT PAGE ------------------------
+------------------------ CONTACT PAGE ------------------------
     Pricing
     About
     Contact

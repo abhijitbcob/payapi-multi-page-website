@@ -218,20 +218,3 @@
         margin-top: 0.6rem;
     }
 }
-
-.ready-to-start {
-    display: grid;
-    justify-content: center;
-    margin-top: 5.5rem;
-    gap: 1.5rem;
-
-    @include respond-to(medium) {
-        margin-top: 9rem;
-    }
-
-    @include respond-to(large) {
-        grid-template-columns: max-content 44.5rem;
-        justify-content: space-between;
-
-    }
-}
