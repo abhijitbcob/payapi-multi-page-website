@@ -908,6 +908,11 @@ li {
   }
 }
 
+@media (min-width: 992px) {
+  .we-work-with {
+    margin-top: -3rem;
+  }
+}
 .we-work-with::before {
   top: -160.3vw;
   left: -53.8%;
