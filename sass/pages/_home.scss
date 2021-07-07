@@ -2,6 +2,10 @@
 // This file contains styles that are specific to the home page. 
 // -----------------------------------------------------------------------------
 .we-work-with {
+    @include respond-to(large) {
+        margin-top: -3rem;
+    }
+
     &::before {
 
         top: -160.3vw;
