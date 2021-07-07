@@ -75,12 +75,14 @@ if (btnSubmit) {
   btnSubmit.addEventListener("click", (e) => validateForm(e, elemsToValidate));
 }
 
-contactForm.addEventListener("click", function (e) {
-  if (e.target.classList.contains("to-validate")) {
-    if (e.target.nextElementSibling) {
-      e.target.parentElement.removeChild(e.target.nextElementSibling);
+if (contactForm) {
+  contactForm.addEventListener("click", function (e) {
+    if (e.target.classList.contains("to-validate")) {
+      if (e.target.nextElementSibling) {
+        e.target.parentElement.removeChild(e.target.nextElementSibling);
+      }
+      e.target.style.color = "";
+      e.target.style.borderColor = "";
     }
-    e.target.style.color = "";
-    e.target.style.borderColor = "";
-  }
-});
+  });
+}
