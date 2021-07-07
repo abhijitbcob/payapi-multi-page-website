@@ -1,3 +1,131 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the contact page. 
 // -----------------------------------------------------------------------------
+
+.contact-main {
+    margin-top: 4rem;
+
+    @include respond-to(medium) {
+        margin-top: 5.4rem;
+    }
+
+    @include respond-to(large) {
+        margin-top: 4.3rem;
+    }
+
+
+    &-grid {
+        gap: 8rem;
+
+        @include respond-to(medium) {
+            gap: 6.4rem;
+
+        }
+
+    }
+}
+
+.contact-form {
+    max-width: 44.5rem;
+    display: grid;
+    gap: 2.4rem;
+    justify-self: center;
+
+    @include respond-to(large) {
+        justify-self: start;
+    }
+
+    .btn {
+        justify-self: start;
+    }
+
+    input,
+    textarea {
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid hsla(207, 33%, 32%, 50%);
+        color: hsl(207, 33%, 32%);
+        font-family: var(--ff-secondary);
+        padding-left: 2rem;
+        padding-bottom: 2.1rem;
+        width: 100%;
+        transition: all 200ms;
+
+
+        &::placeholder {
+            font-size: 1.5rem;
+            font-weight: var(--font-regular);
+            letter-spacing: -0.12px;
+            color: inherit;
+            opacity: 0.5;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: hsl(207, 33%, 32%);
+        }
+    }
+
+    textarea {
+        min-height: 9rem;
+    }
+}
+
+.input-error-msg {
+    padding-left: 2rem;
+    font-size: 1.1rem;
+    color: var(--color-red);
+    letter-spacing: -0.08px;
+    opacity: 0.5;
+}
+
+
+
+#uptodate-checkbox {
+    display: none;
+
+    &+label {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        gap: 2.6rem;
+        cursor: pointer;
+
+
+        &::before {
+            content: '';
+            height: 2.4rem;
+            width: 2.4rem;
+            background-color: hsla(207, 33%, 32%, 25%);
+        }
+    }
+
+
+}
+
+#uptodate-checkbox[value='true']+label::before {
+    background-color: var(--dark-pink);
+    background-image: url('../../images/shared/desktop/checked-mark.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.contact-companies {
+
+    max-width: 54rem;
+    justify-self: center;
+
+    @include respond-to(large) {
+        justify-self: end;
+    }
+
+    .we-work-with__companies {
+        margin-top: 3.2rem;
+        max-width: 100%;
+
+        @include respond-to(medium) {
+            margin-top: 4rem;
+        }
+    }
+}

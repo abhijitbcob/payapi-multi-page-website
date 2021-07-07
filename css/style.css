@@ -48,6 +48,7 @@ li {
   --mirage-blue: hsl(207, 27%, 15%);
   --light-san-juan-blue: hsl(207, 16%, 50%);
   --charm-pink: hsl(337, 60%, 64%);
+  --color-red: hsl(0, 100%, 50%);
   --ff-primary: "DM Serif Display", serif;
   --ff-secondary: "Public Sans", sans-serif;
   --font-regular: 400;
@@ -716,7 +717,7 @@ li {
 .btn {
   display: inline-block;
   padding-inline: 2.55rem;
-  padding-block: 1.5rem;
+  padding-block: 1.42rem;
   text-align: center;
   font-size: 1.5rem;
   font-weight: var(--font-bold);
@@ -766,6 +767,10 @@ li {
 }
 .btn-secondary--disabled {
   opacity: 0.5;
+}
+
+.btn-submit {
+  padding-inline: 4.95rem;
 }
 
 .schedule-form {
@@ -1300,4 +1305,120 @@ li {
   font-size: 5.6rem;
   line-height: 7.2rem;
   letter-spacing: -0.43px;
+}
+
+.contact-main {
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .contact-main {
+    margin-top: 5.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact-main {
+    margin-top: 4.3rem;
+  }
+}
+.contact-main-grid {
+  gap: 8rem;
+}
+@media (min-width: 768px) {
+  .contact-main-grid {
+    gap: 6.4rem;
+  }
+}
+
+.contact-form {
+  max-width: 44.5rem;
+  display: grid;
+  gap: 2.4rem;
+  justify-self: center;
+}
+@media (min-width: 992px) {
+  .contact-form {
+    justify-self: start;
+  }
+}
+.contact-form .btn {
+  justify-self: start;
+}
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(55, 84, 109, 0.5);
+  color: #37546d;
+  font-family: var(--ff-secondary);
+  padding-left: 2rem;
+  padding-bottom: 2.1rem;
+  width: 100%;
+  transition: all 200ms;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-size: 1.5rem;
+  font-weight: var(--font-regular);
+  letter-spacing: -0.12px;
+  color: inherit;
+  opacity: 0.5;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #37546d;
+}
+.contact-form textarea {
+  min-height: 9rem;
+}
+
+.input-error-msg {
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  color: var(--color-red);
+  letter-spacing: -0.08px;
+  opacity: 0.5;
+}
+
+#uptodate-checkbox {
+  display: none;
+}
+#uptodate-checkbox + label {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 2.6rem;
+  cursor: pointer;
+}
+#uptodate-checkbox + label::before {
+  content: "";
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: rgba(55, 84, 109, 0.25);
+}
+
+#uptodate-checkbox[value=true] + label::before {
+  background-color: var(--dark-pink);
+  background-image: url("../../images/shared/desktop/checked-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-companies {
+  max-width: 54rem;
+  justify-self: center;
+}
+@media (min-width: 992px) {
+  .contact-companies {
+    justify-self: end;
+  }
+}
+.contact-companies .we-work-with__companies {
+  margin-top: 3.2rem;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .contact-companies .we-work-with__companies {
+    margin-top: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */
