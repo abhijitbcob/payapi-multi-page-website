@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="This is a solution to the PayAPI multi-page website challenge on Frontend Mentor. Coded by Abhijit Barman">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <meta property='og:image' content="https://payapi-multi-page-website.netlify.app/images/screenshot/contact.jpg" />
+  <meta property='twitter:image'
+    content="https://payapi-multi-page-website.netlify.app/images/screenshot/contact.jpg" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <title>Frontend Mentor | PayAPI Website Challenge</title>
   <link rel="stylesheet" href="css/style.css">
@@ -62,14 +68,20 @@
         <div class="contact-main">
           <div class="grid lg:grid-col-2 items-center contact-main-grid">
             <form action="#" name="contactForm" class="contact-form">
-              <input type="text" name="fullName" id="fullName" placeholder="Name">
               <div>
-                <input type="email" name="emailId" id="emailId" placeholder="Email Address" autocomplete="off">
-                <p class="input-error-msg"></p>
+                <input class="to-validate" type="text" name="fullName" id="fullName" placeholder="Name" value=""
+                  autocomplete="off">
               </div>
-              <input type="text" name="companyName" id="companyName" placeholder="Company Name">
-              <input type="text" name="title" id="title" placeholder="Title">
-              <textarea name="message" id="message" placeholder="Message"></textarea>
+              <div>
+                <input class="to-validate" type="text" name="emailId" id="emailId" placeholder="Email Address"
+                  autocomplete="off">
+              </div>
+              <input type="text" name="companyName" id="companyName" placeholder="Company Name" autocomplete="off">
+              <input type="text" name="title" id="title" placeholder="Title" autocomplete="off">
+              <div>
+                <textarea class="to-validate" name="message" id="message" placeholder="Message"
+                  autocomplete="off"></textarea>
+              </div>
               <div>
                 <input type="checkbox" name="stay-up-to-date" id="uptodate-checkbox" value="false">
                 <label for="uptodate-checkbox">

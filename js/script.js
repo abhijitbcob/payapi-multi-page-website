@@ -2,8 +2,11 @@ const menuButton = document.getElementById("btn-menu");
 const closeButton = document.getElementById("btn-close");
 const mysidenav = document.getElementById("mysidenav");
 const uptodateCheckbox = document.getElementById("uptodate-checkbox");
+
+// For form validation
+const contactForm = document.querySelector(".contact-form");
+const elemsToValidate = document.querySelectorAll(".to-validate");
 const btnSubmit = document.querySelector(".btn-submit");
-const emailInput = document.getElementById("emailId");
 
 // Mobile navigation
 let sidenavState = false;
@@ -37,47 +40,47 @@ if (uptodateCheckbox) {
   });
 }
 
-// form validation
-function validateEmail(e, x) {
+// FORM VALIDATION
+function validateForm(e) {
   var mailformat =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  let elementvalue = x.value;
+  elemsToValidate.forEach((element) => {
+    if (element.value == "") {
+      e.preventDefault();
+      if (element.nextElementSibling) {
+        element.parentElement.removeChild(element.nextElementSibling);
+      }
+      element.parentElement.insertAdjacentHTML(
+        "beforeend",
+        "<p class='input-error-msg'>This field can't be empty</p>"
+      );
+      element.style.color = "var(--color-red)";
+      element.style.borderColor = "var(--color-red)";
+    }
 
-  if (elementvalue == "") {
-    e.preventDefault();
-    x.style.color = "var(--color-red)";
-    x.style.borderColor = "var(--color-red)";
-    x.nextElementSibling.textContent = "This field can't be empty";
-  } else if (!elementvalue.match(mailformat) && elementvalue != "") {
-    e.preventDefault();
-    x.style.color = "var(--color-red)";
-    x.style.borderColor = "var(--color-red)";
-    document.contactForm.emailId.focus();
-    x.nextElementSibling.textContent = "Enter an email address";
-  } else if (x.value.match(mailformat)) {
-    x.style.color = "";
-    x.style.borderColor = "";
-    document.contactForm.emailId.focus();
-    x.nextElementSibling.textContent = "";
-  }
+    if (element.id == "emailId" && element.value != "") {
+      if (!element.value.match(mailformat)) {
+        e.preventDefault();
+        element.parentElement.insertAdjacentHTML(
+          "beforeend",
+          "<p class='input-error-msg'>Please use valid email</p>"
+        );
+      }
+    }
+  });
 }
 
 if (btnSubmit) {
-  btnSubmit.addEventListener("click", function (e) {
-    return validateEmail(e, emailInput);
-  });
+  btnSubmit.addEventListener("click", (e) => validateForm(e, elemsToValidate));
 }
 
-if (emailInput) {
-  emailInput.addEventListener("keyup", function (e) {
-    return validateEmail(e, emailInput);
-  });
-
-  emailInput.addEventListener("blur", function () {
-    emailInput.style.color = "";
-    emailInput.style.borderColor = "";
-    document.contactForm.emailId.focus();
-    emailInput.nextElementSibling.textContent = "";
-  });
-}
+contactForm.addEventListener("click", function (e) {
+  if (e.target.classList.contains("to-validate")) {
+    if (e.target.nextElementSibling) {
+      e.target.parentElement.removeChild(e.target.nextElementSibling);
+    }
+    e.target.style.color = "";
+    e.target.style.borderColor = "";
+  }
+});
